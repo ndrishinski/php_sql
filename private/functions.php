@@ -20,4 +20,12 @@ function h($string=-"") {
     return htmlspecialchars($string);
 }
 
+function error_404() {
+  header($_SERVER["SERVER_PROTOCOL"] . "404 Not Found");
+}
+
+function error_500() {
+  header($_SERVER["SERVER_PROTOCOL"] . "500 Internal Servor Error");
+}
+
 ?>
